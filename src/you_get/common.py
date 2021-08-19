@@ -1519,6 +1519,11 @@ def script_main(download, download_playlist, **kwargs):
     )
 
     download_grp = parser.add_argument_group('Download options')
+
+    download_grp.add_argument(
+        '-J', '--json-input', metavar='FILE', type=argparse.FileType('r', encoding='utf-8'),
+        help='Read extracted URLs in JSON format from FILE'
+    )
     download_grp.add_argument(
         '-n', '--no-merge', action='store_true', default=False,
         help='Do not merge video parts'
@@ -1685,6 +1690,13 @@ def script_main(download, download_playlist, **kwargs):
     if args.socks_proxy:
         set_socks_proxy(args.socks_proxy)
 
+    json_input = None
+
+    if args.json_input:
+        logging.debug('You are trying to load extracted URLs from JSON file. We will skipping all URL parsing '
+                      'procedures and reuse extracted results generated previously.')
+        json_input = json.loads(args.json_input.read())
+
     URLs = []
     if args.input_file:
         logging.debug('you are trying to load urls from %s', args.input_file)
@@ -1706,6 +1718,8 @@ def script_main(download, download_playlist, **kwargs):
 
     try:
         extra = {'args': args}
+        if json_input is not None:
+            extra['json_input'] = json_input
         if extractor_proxy:
             extra['extractor_proxy'] = extractor_proxy
         if stream_id:

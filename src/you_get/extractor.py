@@ -2,6 +2,7 @@
 
 from .common import match1, maybe_print, download_urls, get_filename, parse_host, set_proxy, unset_proxy, get_content, dry_run, player
 from .common import print_more_compatible as print
+from .json_output import VideoExtractorJsonCodec
 from .util import log
 from . import json_output
 import os
@@ -45,7 +46,12 @@ class VideoExtractor():
 
         if 'extractor_proxy' in kwargs and kwargs['extractor_proxy']:
             set_proxy(parse_host(kwargs['extractor_proxy']))
-        self.prepare(**kwargs)
+
+        if self.has_json_input(**kwargs):
+            self.prepare_with_json(**kwargs)
+        else:
+            self.prepare(**kwargs)
+
         if self.out:
             return
         if 'extractor_proxy' in kwargs and kwargs['extractor_proxy']:
@@ -82,6 +88,13 @@ class VideoExtractor():
     def prepare(self, **kwargs):
         pass
         #raise NotImplementedError()
+
+    def prepare_with_json(self, **kwargs):
+        dump_json = kwargs['json_input']
+        VideoExtractorJsonCodec().decode(self, dump_json)
+
+    def has_json_input(self, **kwargs):
+        return 'json_input' in kwargs and kwargs['json_input'] is not None
 
     def extract(self, **kwargs):
         pass
@@ -178,7 +191,7 @@ class VideoExtractor():
 
     def download(self, **kwargs):
         if 'json_output' in kwargs and kwargs['json_output']:
-            json_output.output(self)
+            print(VideoExtractorJsonCodec(pretty=True).encode(self))
         elif 'info_only' in kwargs and kwargs['info_only']:
             if 'stream_id' in kwargs and kwargs['stream_id']:
                 # Display the stream
