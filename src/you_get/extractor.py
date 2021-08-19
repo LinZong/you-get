@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
-from .common import match1, maybe_print, download_urls, get_filename, parse_host, set_proxy, unset_proxy, get_content, dry_run, player
+import os
+import sys
+
+from .common import maybe_print, download_urls, get_filename, parse_host, set_proxy, unset_proxy, dry_run, player
 from .common import print_more_compatible as print
 from .json_output import VideoExtractorJsonCodec
 from .util import log
-from . import json_output
-import os
-import sys
+
 
 class Extractor():
     def __init__(self, *args):
@@ -190,8 +191,17 @@ class VideoExtractor():
         print("videos:")
 
     def download(self, **kwargs):
+        state = VideoExtractorJsonCodec(pretty=True).encode(self)
         if 'json_output' in kwargs and kwargs['json_output']:
-            print(VideoExtractorJsonCodec(pretty=True).encode(self))
+            print(state)
+
+        if 'json_output_file_handle' in kwargs:
+            fh = kwargs['json_output_file_handle']
+            try:
+                fh.write(state)
+            except:
+                pass
+
         elif 'info_only' in kwargs and kwargs['info_only']:
             if 'stream_id' in kwargs and kwargs['stream_id']:
                 # Display the stream

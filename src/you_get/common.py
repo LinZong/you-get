@@ -1521,6 +1521,11 @@ def script_main(download, download_playlist, **kwargs):
     download_grp = parser.add_argument_group('Download options')
 
     download_grp.add_argument(
+        '--json-output', metavar='FILE', type=argparse.FileType('w', encoding='utf-8'),
+        help='Dump extracted URLS in JSON format'
+    )
+
+    download_grp.add_argument(
         '-J', '--json-input', metavar='FILE', type=argparse.FileType('r', encoding='utf-8'),
         help='Read extracted URLs in JSON format from FILE'
     )
@@ -1661,7 +1666,7 @@ def script_main(download, download_playlist, **kwargs):
         auto_rename = True
     if args.url:
         dry_run = True
-    if args.json:
+    if args.json or args.json_output:
         json_output = True
         # to fix extractors not use VideoExtractor
         dry_run = True
@@ -1695,7 +1700,10 @@ def script_main(download, download_playlist, **kwargs):
     if args.json_input:
         logging.debug('You are trying to load extracted URLs from JSON file. We will skipping all URL parsing '
                       'procedures and reuse extracted results generated previously.')
-        json_input = json.loads(args.json_input.read())
+        try:
+            json_input = json.loads(args.json_input.read())
+        except:
+            logging.debug('Load json state failed. Fallback to default mode.')
 
     URLs = []
     if args.input_file:
@@ -1724,6 +1732,8 @@ def script_main(download, download_playlist, **kwargs):
             extra['extractor_proxy'] = extractor_proxy
         if stream_id:
             extra['stream_id'] = stream_id
+        if args.json_output is not None:
+            extra['json_output_file_handle'] = args.json_output
         download_main(
             download, download_playlist,
             URLs, args.playlist,
