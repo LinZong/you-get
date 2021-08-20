@@ -5,7 +5,7 @@ import os
 import subprocess
 import sys
 from ..util.strings import parameterize
-from ..common import print_more_compatible as print
+from ..util.compatible import print_more_compatible as print
 
 try:
     from subprocess import DEVNULL

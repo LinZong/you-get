@@ -3,6 +3,7 @@
 import io
 import os
 import re
+from sqlite3.dbapi2 import adapt
 import sys
 import time
 import json
@@ -1316,6 +1317,7 @@ def set_http_proxy(proxy):
     request.install_opener(opener)
 
 
+@DeprecationWarning
 def print_more_compatible(*args, **kwargs):
     import builtins as __builtin__
     """Overload default print function as py (<3.3) does not support 'flush' keyword.
@@ -1505,7 +1507,17 @@ def script_main(download, download_playlist, **kwargs):
     dry_run_grp = parser.add_argument_group(
         'Dry-run options', '(no actual downloading)'
     )
+
+    env_check_run_grp = parser.add_argument_group(
+        'Envrionment checking options', '(not do any downloading)'
+    )
+
+    env_check_run_grp.add_argument(
+        '--ffmpeg-install-check', action='store_true', help='Check if ffmpeg is installed.'
+    )
+
     dry_run_grp = dry_run_grp.add_mutually_exclusive_group()
+
     dry_run_grp.add_argument(
         '-i', '--info', action='store_true', help='Print extracted information'
     )
@@ -1694,6 +1706,18 @@ def script_main(download, download_playlist, **kwargs):
         set_http_proxy(args.http_proxy)
     if args.socks_proxy:
         set_socks_proxy(args.socks_proxy)
+
+    # Env checking
+    check_env = False
+    if args.ffmpeg_install_check:
+        check_env = True
+        from .processor.ffmpeg import has_ffmpeg_installed
+        ffmpeg_installed = 'YES' if has_ffmpeg_installed() else 'NO'
+        print('FFMPEG-INSTALLATION: %s' % (ffmpeg_installed))
+
+    if check_env:
+        # We shall do nothing after checking environment.
+        sys.exit(0)
 
     json_input = None
 

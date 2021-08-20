@@ -4,7 +4,7 @@ import os
 import sys
 
 from .common import maybe_print, download_urls, get_filename, parse_host, set_proxy, unset_proxy, dry_run, player
-from .common import print_more_compatible as print
+from .util.compatible import print_more_compatible as print
 from .json_output import VideoExtractorJsonCodec
 from .util import log
 
