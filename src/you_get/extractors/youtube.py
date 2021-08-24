@@ -184,10 +184,9 @@ class YouTube(VideoExtractor):
 
     def prepare(self, **kwargs):
         assert self.url or self.vid
-
         if not self.vid and self.url:
             self.vid = self.__class__.get_vid_from_url(self.url)
-
+            self.type = 'video'
             if self.vid is None:
                 self.download_playlist_by_url(self.url, **kwargs)
                 exit(0)

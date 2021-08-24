@@ -188,6 +188,14 @@ class Bilibili(VideoExtractor):
 
         # regular video
         if sort == 'video':
+            # 填充类型和vid，方便任务单结果缓存。
+            self.type = 'video'
+            self.vid = re.match(r'https?://(www\.)?bilibili\.com/video/(av(\d+)|(BV(\S+)))', self.url).group(2)
+            # 干掉所有干扰缓存的querystring
+            qs_start_index = self.vid.find('?')
+            if qs_start_index != -1:
+                self.vid = self.vid[:qs_start_index-1]
+
             initial_state_text = match1(html_content, r'__INITIAL_STATE__=(.*?);\(function\(\)')  # FIXME
             initial_state = json.loads(initial_state_text)
 
@@ -299,6 +307,7 @@ class Bilibili(VideoExtractor):
 
         # bangumi
         elif sort == 'bangumi':
+            self.type = 'bangumi'
             initial_state_text = match1(html_content, r'__INITIAL_STATE__=(.*?);\(function\(\)')  # FIXME
             initial_state = json.loads(initial_state_text)
 
@@ -314,6 +323,7 @@ class Bilibili(VideoExtractor):
             ep_id = initial_state['epInfo']['id']
             avid = initial_state['epInfo']['aid']
             cid = initial_state['epInfo']['cid']
+            self.vid = "ep_id=%s;avid=%s;cid=%s" % (ep_id, avid, cid)
             playinfos = []
             api_url = self.bilibili_bangumi_api(avid, cid, ep_id)
             api_content = get_content(api_url, headers=self.bilibili_headers(referer=self.url))
@@ -378,7 +388,9 @@ class Bilibili(VideoExtractor):
 
         # vc video
         elif sort == 'vc':
+            self.type = 'vc'
             video_id = match1(self.url, r'https?://vc\.?bilibili\.com/video/(\d+)')
+            self.vid = video_id
             api_url = self.bilibili_vc_api(video_id)
             api_content = get_content(api_url, headers=self.bilibili_headers())
             api_playinfo = json.loads(api_content)
@@ -400,6 +412,7 @@ class Bilibili(VideoExtractor):
 
         # live
         elif sort == 'live':
+            # 不支持缓存直播。
             m = re.match(r'https?://live\.bilibili\.com/(\w+)', self.url)
             short_id = m.group(1)
             api_url = self.bilibili_live_room_init_api(short_id)
@@ -426,8 +439,11 @@ class Bilibili(VideoExtractor):
 
         # audio
         elif sort == 'audio':
+            self.type = 'audio'
             m = re.match(r'https?://(?:www\.)?bilibili\.com/audio/au(\d+)', self.url)
             sid = m.group(1)
+            self.vid = sid
+
             api_url = self.bilibili_audio_info_api(sid)
             api_content = get_content(api_url, headers=self.bilibili_headers())
             song_info = json.loads(api_content)

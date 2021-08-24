@@ -31,6 +31,7 @@ class VideoExtractorJsonCodec(VideoExtractorCodec):
         out['caption_tracks'] = ve.caption_tracks
         out['danmaku'] = ve.danmaku
         out['lyrics'] = ve.lyrics
+        out['type'] = ve.type
         try:
             if ve.dash_streams:
                 out['dash_streams'].update(ve.dash_streams)
@@ -64,6 +65,7 @@ class VideoExtractorJsonCodec(VideoExtractorCodec):
         video_extractor.audiolang = encoded_data.get('audiolang', None)
         video_extractor.danmaku = encoded_data.get('danmaku')
         video_extractor.lyrics = encoded_data.get('lyrics')
+        video_extractor.type = encoded_data.get('type')
         extra = encoded_data.get('extra')
         if extra is not None:
             video_extractor.referer = extra.get('referer')
