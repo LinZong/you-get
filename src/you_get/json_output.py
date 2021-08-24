@@ -72,6 +72,9 @@ class VideoExtractorJsonCodec(VideoExtractorCodec):
 
 def output(video_extractor, pretty_print=True):
     ve = video_extractor
+    print(VideoExtractorJsonCodec().encode(ve))
+    return
+    # Not used yet.
     out = {}
     out['url'] = ve.url
     out['title'] = ve.title

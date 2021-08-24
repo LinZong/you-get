@@ -1529,6 +1529,9 @@ def script_main(download, download_playlist, **kwargs):
         '--json', action='store_true',
         help='Print extracted URLs in JSON format'
     )
+    dry_run_grp.add_argument(
+        '--url-to-module', action='store_true', help='Find the support module in you-get to handle such URL.'
+    )
 
     download_grp = parser.add_argument_group('Download options')
 
@@ -1758,6 +1761,9 @@ def script_main(download, download_playlist, **kwargs):
             extra['stream_id'] = stream_id
         if args.json_output is not None:
             extra['json_output_file_handle'] = args.json_output
+        if args.url_to_module is not None:
+            extra['url_to_module'] = args.url_to_module
+
         download_main(
             download, download_playlist,
             URLs, args.playlist,
@@ -1827,7 +1833,7 @@ def google_search(url):
     return(videos[0][0])
 
 
-def url_to_module(url):
+def url_to_module(url, only_show_module_name=False):
     try:
         video_host = r1(r'https?://([^/]+)/', url)
         video_url = r1(r'https?://[^/]+(.*)', url)
@@ -1849,6 +1855,10 @@ def url_to_module(url):
 
     k = r1(r'([^.]+)', domain)
     if k in SITES:
+        if only_show_module_name:
+            print("MODULE:%s" % k)
+            # exit.
+            sys.exit(0)
         return (
             import_module('.'.join(['you_get', 'extractors', SITES[k]])),
             url
@@ -1862,11 +1872,14 @@ def url_to_module(url):
         if location and location != url and not location.startswith('/'):
             return url_to_module(location)
         else:
+            if only_show_module_name:
+                print("MODULE:UNKNOWN")
+                sys.exit(0)
             return import_module('you_get.extractors.universal'), url
 
 
 def any_download(url, **kwargs):
-    m, url = url_to_module(url)
+    m, url = url_to_module(url, only_show_module_name=kwargs['url_to_module'])
     m.download(url, **kwargs)
 
 
