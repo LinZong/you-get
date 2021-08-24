@@ -24,8 +24,8 @@ class VideoExtractor():
     def __init__(self, *args):
         self.url = None
         self.title = None
-        # video type
-        self.type = None
+        # video type, set to 'video' by default, and it may be changed through content resolving.
+        self.type = 'video'
         # video id (unique). video type and video id can uniquely locate a resource.
         self.vid = None
         self.m3u8_url = None
