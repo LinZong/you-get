@@ -1,0 +1,141 @@
+{
+    "url": "https://www.bilibili.com/video/BV1F44y1C7Bg",
+    "title": "【初音ミク】ピカピカ / n.k",
+    "vid": "BV1F44y1C7Bg",
+    "m3u8_url": null,
+    "site": "Bilibili",
+    "streams": {
+        "flv": {
+            "container": "flv",
+            "quality": "高清 1080P",
+            "size": 24422873,
+            "src": [
+                "http://upos-sz-mirrorkodo.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-80.flv?e=ig8euxZM2rNcNbNahwdVhoMg7zdVhwdEto8g5X10ugNcXBlqNxHxNEVE5XREto8KqJZHUa6m5J0SqE85tZvEuENvNC8xNEVE9EKE9IMvXBvE2ENvNCImNEVEK9GVqJIwqa80WXIekXRE9IMvXBvEuENvNCImNEVEua6m2jIxux0CkF6s2JZv5x0DQJZY2F8SkXKE9IB5QK==&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=kodobv&platform=pc&trid=1a6876fc78dd4e8f878ca0fdaf28bda0&uipk=5&upsig=b13ea55e969ead524bd29dbc42997034&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        },
+        "flv720": {
+            "container": "flv",
+            "quality": "高清 720P",
+            "size": 19385152,
+            "src": [
+                "http://upos-sz-mirrorcos.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-64.flv?e=ig8euxZM2rNcNbN17WdVhoMghWUVhwdEto8g5X10ugNcXBlqNxHxNEVE5XREto8KqJZHUa6m5J0SqE85tZvEuENvNC8xNEVE9EKE9IMvXBvE2ENvNCImNEVEK9GVqJIwqa80WXIekXRE9IMvXBvEuENvNCImNEVEua6m2jIxux0CkF6s2JZv5x0DQJZY2F8SkXKE9IB5QK==&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=cosbv&platform=pc&trid=41157a43b58b436c91b97df8d01a6b0b&uipk=5&upsig=6a46cbc1278a4a0e966bb2478aa77b4a&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        },
+        "flv480": {
+            "container": "flv",
+            "quality": "清晰 480P",
+            "size": 8600922,
+            "src": [
+                "http://upos-sz-mirrorkodo.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-32.flv?e=ig8euxZM2rNcNbeBhwdVtWeBhwdVNEVEuCIv29hEn0lqXg8Y2ENvNCImNEVEUJ1miI7MT96fqj3E9r1qNCNEto8g2ENvN03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=kodobv&platform=pc&trid=14cd9586b21d4a738ce86fd08da6d0f1&uipk=5&upsig=b5fb0c310c28334d46d9f2d336df4176&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        },
+        "flv360": {
+            "container": "flv",
+            "quality": "流畅 360P",
+            "size": 6515882,
+            "src": [
+                "http://upos-sz-mirrorcos.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-16.mp4?e=ig8euxZM2rNcNbug7WdVtWug7WdVNEVEuCIv29hEn0lqXg8Y2ENvNCImNEVEUJ1miI7MT96fqj3E9r1qNCNEto8g2ENvN03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=cosbv&platform=pc&trid=a283fb50b7994b279f53cde6a58473e1&uipk=5&upsig=82ebf5bfa7439874101b1c0e991bac10&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        }
+    },
+    "dash_streams": {
+        "dash-flv": {
+            "container": "mp4",
+            "quality": "高清 1080P",
+            "src": [
+                [
+                    "https://upos-sz-mirrorks3o1.bilivideo.com/upgcxcode/27/65/394376527/394376527-1-30077.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=ks3o1bv&oi=666245915&trid=35fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=3478dda44727220353c6c4402253f7b1&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ],
+                [
+                    "https://upos-sz-mirrorkodoo1.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-30280.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=kodoo1bv&oi=666245915&trid=35fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=ce7fac51c1fabaac6061aa295d2a2803&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ]
+            ],
+            "size": 20625306
+        },
+        "dash-flv720": {
+            "container": "mp4",
+            "quality": "高清 720P",
+            "src": [
+                [
+                    "https://cn-zjhz-cmcc-v-08.bilivideo.com/upgcxcode/27/65/394376527/394376527-1-30066.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=vcache&oi=666245915&trid=000135fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=297072c81fcbb06940fd4324e527935e&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&cdnid=4066&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ],
+                [
+                    "https://upos-sz-mirrorkodoo1.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-30280.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=kodoo1bv&oi=666245915&trid=35fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=ce7fac51c1fabaac6061aa295d2a2803&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ]
+            ],
+            "size": 17851389
+        },
+        "dash-flv480": {
+            "container": "mp4",
+            "quality": "清晰 480P",
+            "src": [
+                [
+                    "https://upos-sz-mirrorcoso1.bilivideo.com/upgcxcode/27/65/394376527/394376527-1-30033.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=coso1bv&oi=666245915&trid=35fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=4d6470161d7e1961a4694f4d60c650dc&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ],
+                [
+                    "https://upos-sz-mirrorkodoo1.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-30280.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=kodoo1bv&oi=666245915&trid=35fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=ce7fac51c1fabaac6061aa295d2a2803&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ]
+            ],
+            "size": 14912035
+        },
+        "dash-flv360": {
+            "container": "mp4",
+            "quality": "流畅 360P",
+            "src": [
+                [
+                    "https://upos-sz-mirrorkodoo1.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-30016.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=kodoo1bv&oi=666245915&trid=35fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=a843ecb5dd54f08d590c021ef2ed49e6&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ],
+                [
+                    "https://upos-sz-mirrorkodoo1.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-30216.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1629830444&gen=playurlv2&os=kodoo1bv&oi=666245915&trid=35fe4c1b79dd41858613269de614ed0au&platform=pc&upsig=3b5de9f7d2e558e80879f6ab284671d4&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&orderid=0,3&agrr=1&logo=80000000"
+                ]
+            ],
+            "size": 6369327
+        }
+    },
+    "streams_sorted": [
+        {
+            "id": "flv",
+            "container": "flv",
+            "quality": "高清 1080P",
+            "size": 24422873,
+            "src": [
+                "http://upos-sz-mirrorkodo.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-80.flv?e=ig8euxZM2rNcNbNahwdVhoMg7zdVhwdEto8g5X10ugNcXBlqNxHxNEVE5XREto8KqJZHUa6m5J0SqE85tZvEuENvNC8xNEVE9EKE9IMvXBvE2ENvNCImNEVEK9GVqJIwqa80WXIekXRE9IMvXBvEuENvNCImNEVEua6m2jIxux0CkF6s2JZv5x0DQJZY2F8SkXKE9IB5QK==&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=kodobv&platform=pc&trid=1a6876fc78dd4e8f878ca0fdaf28bda0&uipk=5&upsig=b13ea55e969ead524bd29dbc42997034&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        },
+        {
+            "id": "flv720",
+            "container": "flv",
+            "quality": "高清 720P",
+            "size": 19385152,
+            "src": [
+                "http://upos-sz-mirrorcos.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-64.flv?e=ig8euxZM2rNcNbN17WdVhoMghWUVhwdEto8g5X10ugNcXBlqNxHxNEVE5XREto8KqJZHUa6m5J0SqE85tZvEuENvNC8xNEVE9EKE9IMvXBvE2ENvNCImNEVEK9GVqJIwqa80WXIekXRE9IMvXBvEuENvNCImNEVEua6m2jIxux0CkF6s2JZv5x0DQJZY2F8SkXKE9IB5QK==&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=cosbv&platform=pc&trid=41157a43b58b436c91b97df8d01a6b0b&uipk=5&upsig=6a46cbc1278a4a0e966bb2478aa77b4a&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        },
+        {
+            "id": "flv480",
+            "container": "flv",
+            "quality": "清晰 480P",
+            "size": 8600922,
+            "src": [
+                "http://upos-sz-mirrorkodo.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-32.flv?e=ig8euxZM2rNcNbeBhwdVtWeBhwdVNEVEuCIv29hEn0lqXg8Y2ENvNCImNEVEUJ1miI7MT96fqj3E9r1qNCNEto8g2ENvN03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=kodobv&platform=pc&trid=14cd9586b21d4a738ce86fd08da6d0f1&uipk=5&upsig=b5fb0c310c28334d46d9f2d336df4176&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        },
+        {
+            "id": "flv360",
+            "container": "flv",
+            "quality": "流畅 360P",
+            "size": 6515882,
+            "src": [
+                "http://upos-sz-mirrorcos.bilivideo.com/upgcxcode/27/65/394376527/394376527_nb2-1-16.mp4?e=ig8euxZM2rNcNbug7WdVtWug7WdVNEVEuCIv29hEn0lqXg8Y2ENvNCImNEVEUJ1miI7MT96fqj3E9r1qNCNEto8g2ENvN03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&deadline=1629830444&gen=playurl&nbs=1&oi=666245915&os=cosbv&platform=pc&trid=a283fb50b7994b279f53cde6a58473e1&uipk=5&upsig=82ebf5bfa7439874101b1c0e991bac10&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk&mid=0"
+            ]
+        }
+    ],
+    "caption_tracks": {},
+    "danmaku": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><i><chatserver>chat.bilibili.com</chatserver><chatid>394376527</chatid><mission>0</mission><maxlimit>1000</maxlimit><state>0</state><real_name>0</real_name><source>k-v</source><d p=\"157.09800,1,25,16777215,1629797712,0,545c1df4,53847791952841216,10\">kksk</d><d p=\"59.92300,1,25,16777215,1629788969,0,c2a63735,53843207972272128,10\">kksk</d><d p=\"79.93000,1,25,16777215,1629779756,0,664ef0a1,53838377714278912,10\">kksk</d><d p=\"123.40700,1,25,16777215,1629730636,0,29b79ab1,53812625060487168,10\">kksk</d><d p=\"82.69400,1,25,104601,1629730053,0,4887c5df,53812319160539648,10\">kksk</d><d p=\"30.17700,1,25,16777215,1629723254,0,aff39478,53808754445177856,10\">好可爱的曲子</d><d p=\"106.17900,1,25,16777215,1629721347,0,75bfdd88,53807754823349760,10\">kksk</d><d p=\"51.14500,5,25,38979,1629720313,0,997c561f,53807212612285440,10\">kksk</d><d p=\"12.59800,1,25,16777215,1629711062,0,5b62759a,53802362323203584,10\">可爱！！！</d><d p=\"151.23900,1,25,16777215,1629700225,0,68b75d9b,53796680747363328,10\">kksk</d><d p=\"44.42000,5,25,38979,1629689675,0,1a406aa2,53791149310272512,10\">kksk</d><d p=\"148.37200,1,25,16777215,1629689373,0,43a292a,53790991354420736,10\">kksk</d><d p=\"15.16600,1,25,16777215,1629682605,0,b583be49,53787442772289536,10\">冷了</d><d p=\"66.56400,1,25,16777215,1629677334,0,6da0965f,53784679273321472,10\">kksk</d><d p=\"116.69000,1,25,16777215,1629668494,0,d1be04c2,53780044722135040,10\">kksk</d><d p=\"9.21900,1,25,16777215,1629655221,0,89d6c328,53773085861142016,10\">前奏就好戳！</d><d p=\"174.44200,1,25,41194,1629652109,0,cedfbb95,53771454391746560,10\">kksk</d><d p=\"114.77200,1,25,41194,1629641636,0,ae9aa8b2,53765963264525824,10\">kksk～</d><d p=\"52.41700,1,25,16777215,1629637907,0,bd609675,53764008281593856,10\">kirakira</d><d p=\"167.51100,1,25,16777215,1629634115,0,3220d744,53762020176135680,10\">kksk</d><d p=\"215.94000,1,25,16777215,1629626856,0,c00a7de9,53758214199790080,10\">kksk</d><d p=\"17.64700,1,25,16777215,1629802255,0,127e5c67,53850173722457600,9\">好耶</d><d p=\"9.26700,5,25,15138834,1629726079,0,384cc816,53810235568117760,9\">好耶</d><d p=\"18.61100,1,25,16777215,1629736946,0,8e78712c,53815933401744384,8\">短发！！</d><d p=\"51.38700,1,25,16777215,1629726511,0,666ff314,53810462103620608,8\">kksk</d><d p=\"6.77000,1,25,16777215,1629639464,0,d7c30d6f,53764824658290176,8\">出息了</d><d p=\"62.33900,1,25,16777215,1629625140,0,45650a1d,53757314765178368,8\">kksk</d><d p=\"12.31700,1,25,16777215,1629763412,0,cc2a3361,53829808914920448,7\">好耶</d><d p=\"52.98000,1,25,16777215,1629626682,0,c00a7de9,53758123309757952,6\">kksk</d><d p=\"4.47700,1,25,16777215,1629625126,0,c7a777df,53757307476740096,6\">好耶</d><d p=\"15.00000,1,25,16777215,1629724612,0,79bef4dc,53809466729744896,5\">好耶</d><d p=\"6.11100,1,25,16777215,1629766066,0,757b39f0,53831200493229056,4\">短发好耶</d><d p=\"55.34800,1,25,16777215,1629730384,0,5e93b03b,53812492819868160,4\">kksk</d><d p=\"57.62200,1,25,16777215,1629724870,0,7ac0b74b,53809601662697472,2\">kksk</d><d p=\"38.82600,1,25,16777215,1629793783,0,1e9d9054,53845732065550336,1\">是新歌～</d><d p=\"30.57700,1,25,9487136,1629778810,0,218769f2,53837882159032832,1\">火钳刘明</d><d p=\"24.38200,1,25,16777215,1629738269,0,c8a9fdf4,53816626646864896,1\">短髮miku</d><d p=\"193.82500,1,25,16777215,1629734273,0,b1fb6b35,53814531864476160,1\">真的好听啊.</d><d p=\"224.28300,1,25,16777215,1629732825,0,1e5c3f07,53813772301866496,1\">初音短发叶好可爱</d><d p=\"17.30000,1,25,16777215,1629729952,0,ca88a385,53812266295035904,1\">kksk</d><d p=\"73.85300,1,25,38979,1629728888,0,9f0b49a6,53811708299918336,1\">YYYYYYYYYYYYYYYYYYYYYYYYYY</d><d p=\"0.34100,1,25,16777215,1629728387,0,37c96650,53811445652572160,1\">首页通知书！</d><d p=\"16.06600,1,25,16777215,1629724828,0,7ac0b74b,53809579865783808,1\">匕力</d><d p=\"83.89900,1,25,16777215,1629716538,0,f915cbc4,53805233301825024,1\">o( ❛ᴗ❛ )o</d><d p=\"15.98000,1,25,16777215,1629716041,0,f3b25974,53804973149408768,1\">miku赛高</d><d p=\"222.40800,1,25,16777215,1629709187,0,447b0ff1,53801379223870464,1\">88888</d><d p=\"70.14000,5,25,38979,1629689711,0,1a406aa2,53791168402161664,1\">kirakiraのmiku</d><d p=\"32.17400,1,25,16777215,1629685910,0,1a2f8e5,53789175503235584,1\">mikumikumi~</d><d p=\"59.32200,1,25,16777215,1629685516,0,a4a22422,53788968968022016,1\">kksk</d><d p=\"10.13100,1,25,16777215,1629682597,0,b583be49,53787438590115840,1\">liang l</d><d p=\"88.27100,5,25,41194,1629641609,0,ae9aa8b2,53765949309609984,1\">YYYYYYYYYYYYYYYYYYYYYY</d><d p=\"221.64200,1,25,16777215,1629625274,0,d207cbfc,53757385017203200,1\">YYYYYY</d><d p=\"65.04900,1,25,16777215,1629625109,0,d207cbfc,53757298095660544,1\">YYYYYYYYYYYYYY</d><d p=\"12.04900,1,25,16777215,1629625056,0,d207cbfc,53757270546816000,1\">mikumikumiku</d><d p=\"84.45600,1,25,16777215,1629780873,0,69a3cbf1,53838963658151936,0\">弹幕好少 不科学</d><d p=\"43.84200,1,25,3786171,1629754783,0,70a00461,53825285048077312,0\">!!!!!!!!!!!!!!!!!</d></i>",
+    "lyrics": null,
+    "type": "video",
+    "extra": {
+        "referer": "https://www.bilibili.com/video/BV1F44y1C7Bg",
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"
+    }
+}
