@@ -1484,7 +1484,7 @@ def script_main(download, download_playlist, **kwargs):
             kwargs['repo_path'] if 'repo_path' in kwargs else __version__
         )
         log.i(
-            'version {}, a tiny downloader that scrapes the web.'.format(
+            'version {} modified by 54youth, a tiny downloader that scrapes the web.'.format(
                 version
             )
         )
